@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Medvedeva-8</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="main-container">
+        <header class="header">
+            <div class="wrap-site">
+                <a href="#" class="header__logo">
+                    <img class="header__logo-pic" src="img/umbrella_logo.png" width="48" alt="umbrella_logo"
+                         height="48">
+                    <span class="header__logo-discription">Мэрри Попинс</span>
+                </a>
+                <input class="input" type="checkbox" id="menu-burger">
+                <label class="label" for="menu-burger"></label>
+                <nav class="header__navigation">
+                    <ul class="navigation-list main-menu">
+                        <li class="main-menu__item"><a class="main-menu__link" href="#">Каталог</a>
+                            <ul class="main-menu sub-list">
+                                <li class="sub-list__item"><a class="sub-list__link" href="#">Механика</a></li>
+                                <li class="sub-list__item"><a class="sub-list__link" href="#">Автомат</a></li>
+                                <li class="sub-list__item"><a class="sub-list__link" href="#">Полуавтомат</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menu__item"><a class="main-menu__link" href="#">Новости</a></li>
+                        <li class="main-menu__item"><a class="main-menu__link" href="#">Доставка</a></li>
+                        <li class="main-menu__item"><a class="main-menu__link" href="#">Контакты</a></li>
+                        <li class="main-menu__item item--with-icon"><a class="main-menu__link link-icon link-icon--search" href="#">Что будем искать?</a></li>
+                    </ul>
+                </nav>
+                <div class="header__cart"><a class="cart-link cart-link--buy" href="#">В корзине пусто</a></div>
+            </div>
+        </header>
+        <main class="content">
+            <div class="slider">
+                <ul class="slider-list">
+                    <!--<input  class="slider__input" type="radio" id="first-slide" name="switch-slider" checked>-->
+                    <li class="slider-list__item first-slide">
+                        <img  class="slider-list__pic" src="img/slide_1_desktop.png" width="960" height="320" alt="slide1">
+                        <h2 class="slider-list__text">Успей на распродажу!</h2>
+                        <button class="slider-list__button">Подробнее</button>
+                    </li>
+                    <li class="slider-list__item second-slide">
+                        <img class="slider-list__pic" src="img/slide_2_desktop.png" alt="slide2" width="960"
+                             height="320">
+                        <h2 class="slider-list__text">Зонты для пляжа</h2>
+                        <button class="slider-list__button">Подробнее</button>
+                    </li>
+                    <li class="slider-list__item third-slide">
+                        <img class="slider-list__pic" src="img/slide_3_desktop.png" alt="slide3" width="960"
+                             height="320">
+                        <h2 class="slider-list__text">Скидки на яркие зонты</h2>
+                        <button class="slider-list__button">Подробнее</button>
+                    </li>
+                </ul>
+                <div class="switch">
+                    <label class="switch__item" for="first-slide">
+                        <input  class="switch__item-input" type="radio" id="first-slide" name="switch-slider" checked>
+                    </label>
+                    <label class="switch__item-input" for="second-slide">
+                        <input  class="slider__input" type="radio" id="second-slide" name="switch-slider">
+                    </label>
+                    <label class="switch__item-input" for="third-slide">
+                        <input  class="slider__input" type="radio" id="third-slide" name="switch-slider">
+                    </label>
+                </div>
+            </div>
+
+                    <ul class="product-list">
+                        <li class="product-list__item">
+                            <section class="product-card">
+                                <div class="product-card__img-wrap">
+                                <img class="product-card__pic" src="img/yellow_umbrella_desktop.png" alt="yellow_umbrella"
+                                     width="222" height="222">
+                                </div>
+                                <h2 class="product-card__title">Зонт «Банан»</h2>
+                                <ul class="product-card__specification specification-list">
+                                    <li class="specification-list__item">Полуавтомат</li>
+                                    <li class="specification-list__item">Желтый</li>
+                                    <li class="specification-list__item">0.4 кг</li>
+                                    <li class="specification-list__item">103 см</li>
+                                </ul>
+                                <span class="product-card__price">218 грн</span>
+                                <button class="product-card__buy"><img class="product-card__buy-icon1" src="img/basket_icon.png" alt="basket_icon">в корзину</button>
+                            </section>
+                        </li>
+                        <li class="product-list__item ">
+                            <section class="product-card">
+                                <div class="product-card__img-wrap">
+                                <img class="product-card__pic" src="img/umbrella-with-flowers.png" alt="pink_umbrella"
+                                     width="250" height="250">
+                                </div>
+                                <h2 class="product-card__title">Зонт с цветами</h2>
+                                <ul class="product-card__specification specification-list">
+                                    <li class="specification-list__item">Автомат</li>
+                                    <li class="specification-list__item">Розовый</li>
+                                    <li class="specification-list__item">0.45 кг</li>
+                                    <li class="specification-list__item">120 см</li>
+                                </ul>
+                                <span class="product-card__price">1600 грн</span>
+                                <button class="product-card__buy"><img class="product-card__buy-icon1" src="img/basket_icon.png" alt="basket_icon">в корзину</button>
+                            </section>
+                        </li>
+                        <li class="product-list__item ">
+                            <section class="product-card">
+                                <div class="product-card__img-wrap">
+                                    <img class="product-card__pic" src="img/light_blue_umbrella_desktop.png" alt="light_blue_umbrella"
+                                         width="222" height="222">
+                                </div>
+                                <h2 class="product-card__title">Зонт с картой мира</h2>
+                                <ul class="product-card__specification specification-list">
+                                    <li class="specification-list__item">Механика</li>
+                                    <li class="specification-list__item">Разноцветный</li>
+                                    <li class="specification-list__item">0.345 кг</li>
+                                    <li class="specification-list__item">120 см</li>
+                                </ul>
+                                <span class="product-card__price">725 грн</span>
+                                <button class="product-card__buy"><img class="product-card__buy-icon1" src="img/basket_icon.png" alt="basket_icon">в корзину</button>
+                            </section>
+                        </li>
+                        <li class="product-list__item ">
+                            <section class="product-card">
+                                <div class="product-card__img-wrap">
+                                <img class="product-card__pic" src="img/black_white_umbrella_desktop.png" alt="black_white_umbrella"
+                                     width="245" height="222">
+                                </div>
+                                <h2 class="product-card__title">Зонт с бабочками</h2>
+                                <ul class="product-card__specification specification-list">
+                                    <li class="specification-list__item">Автомат</li>
+                                    <li class="specification-list__item">Разнозветный</li>
+                                    <li class="specification-list__item">0.45 кг</li>
+                                    <li class="specification-list__item">103 см</li>
+                                </ul>
+                                <span class="product-card__price">1299 грн</span>
+                                <button class="product-card__buy"><img class="product-card__buy-icon1" src="img/basket_icon.png" alt="basket_icon">в корзину</button>
+                            </section>
+                        </li>
+                    </ul>
+            <div class="articles">
+                <article class="articles__item">
+                    <div class="articles__item-logo">
+                        <img class="articles__item-logo-pic" src="img/article_logo_pic1.png" alt="articles_pic1"
+                             width="80" height="80">
+                    </div>
+
+                    <div class="articles__item-counts counts">
+                        <span class="counts__time-count">3h ago</span>
+                        <span class="counts__comment-count">23</span>
+                    </div>
+                    <h2 class="articles__item-title">Kenya Gold Coffee</h2>
+                    <p class="articles__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, deleniti, pariatur!
+                        Blanditiis et ipsa odio quos, recusandae vel.</p>
+                </article>
+                <article class="articles__item">
+                    <div class="articles__item-logo">
+                        <img class="articles__item-logo-pic" src="img/article_logo_pic_2.png" alt="articles_pic2"
+                             width="304" height="304">
+                    </div>
+                    <div class="articles__item-counts counts">
+                        <span class="counts__time-count">3h ago</span>
+                        <span class="counts__comment-count">23</span>
+                    </div>
+                    <h2 class="articles__item-title">Kenya Gold Coffee</h2>
+                    <p class="articles__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, deleniti, pariatur!
+                        Blanditiis et ipsa odio quos, recusandae vel.</p>
+                </article>
+                <article class="articles__item articles__item--last">
+                    <div class="articles__item-logo">
+                        <img class="articles__item-logo-pic" src="img/article_logo_pic_3.png" alt="articles_pic3"
+                             width="304" height="304">
+                    </div>
+                    <div class="articles__item-counts counts">
+                        <span class="counts__time-count">3h ago</span>
+                        <span class="counts__comment-count">23</span>
+                    </div>
+                    <h2 class="articles__item-title">Kenya Gold Coffee</h2>
+                    <p class="articles__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, deleniti, pariatur!
+                        Blanditiis et ipsa odio quos, recusandae vel.</p>
+                </article>
+            </div>
+            <div class="mail-block">
+                <div class="mail-block__container">
+                    <section class="mail-block__description">
+                        <h3 class="mail-block__title">Подпишитесь на рассылку</h3>
+                        <p class="mail-block__text">Раз в месяц присылаем подборку лучших статей из нашего блога. Без спама.</p>
+                    </section>
+                    <form class="mail-block__form">
+                        <input class="mail-block__input" type="email" placeholder="Введите свою почту">
+                        <input class="mail-block__btn" type="button" value="Подписаться">
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="wrap-site">
+                <p class="footer__content">Учебный проект<a class="footer__content-link" href="https://jedicss.com/">JediCSS</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
